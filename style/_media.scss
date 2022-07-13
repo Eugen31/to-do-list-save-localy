@@ -1,0 +1,21 @@
+// medium devices
+@media only screen and (min-width: 48rem) {
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h1 {
+        padding-left: 1.5em;
+    }
+}
+
+// large devices
+@media only screen and (min-width: 64rem) {
+    body {
+        background-color: $dark-blue-btn
+    }
+    .container {
+        width: 70%;
+        max-width: 50rem;
+    }
+}

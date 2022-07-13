@@ -1,0 +1,20 @@
+@mixin center-child {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+@mixin flexbox($justify-content:center, $gap:0) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin flexbox-block($gap:0) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}

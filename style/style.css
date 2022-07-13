@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  cursor: pointer;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+/* --------------------------CONTAINER----------------------- */
+.container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  background-color: #242F40;
+  overflow: auto;
+}
+
+/* ------------------------CHECK UNCHECK---------------------- */
+del {
+  opacity: 70%;
+  font-style: italic;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  background-color: #CCA43B;
+}
+
+header h1 {
+  padding-top: 0.5em;
+}
+
+header .task-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5em;
+  padding: 1.2em;
+}
+
+header .task-icons-container div {
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  background-color: #1b0303;
+  color: #ffffff;
+  border-radius: 0.625rem;
+  padding-top: 0.4em;
+  cursor: pointer;
+}
+
+header .task-icons-container div img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.app-content {
+  position: relative;
+  color: #ffffff;
+  /* ----------------------------USER INPUT--------------------- */
+  /* ---------------------------TASK LIST---------------------- */
+  /* ------------------------CLEAR BTN------------------------ */
+}
+
+.app-content .userinput {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.1em;
+  padding: 1em 0;
+}
+
+.app-content .userinput input {
+  text-align: inherit;
+  width: clamp(12rem, 25vw, 35%);
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+}
+
+.app-content .userinput button {
+  padding-left: 1em;
+  border: none;
+  background-color: #242F40;
+}
+
+.app-content .userinput button img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.app-content .list-of-tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+.app-content .list-of-tasks div {
+  border-radius: 5px;
+  width: clamp(15rem, 40vw, 45%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  padding: 0.5em;
+  margin-top: 0.3em;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -2px 15px 4px rgba(27, 3, 3, 0);
+          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -2px 15px 4px rgba(27, 3, 3, 0);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.app-content .list-of-tasks div:hover {
+  font-weight: bold;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.app-content .list-of-tasks div img:first-child {
+  margin-left: 0;
+  margin-right: auto;
+  padding-left: 0.3em;
+}
+
+.app-content .list-of-tasks div img:last-child {
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 0.3em;
+}
+
+.app-content .list-of-tasks div span {
+  width: clamp(12rem, 32vw, 90%);
+  padding: 0.2em;
+  word-wrap: break-word;
+}
+
+.app-content .clear-list {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 2em auto;
+  padding: 0.4em;
+  background-color: #060f18;
+  border-radius: 0.5em;
+  border: none;
+}
+
+@media only screen and (min-width: 48rem) {
+  #header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  h1 {
+    padding-left: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  body {
+    background-color: #060f18;
+  }
+  .container {
+    width: 70%;
+    max-width: 50rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

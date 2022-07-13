@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="date">
+                <h1></h1>
+            </div>
+            <div class="task-icons-container">
+                <div id="task-left">
+                    <img src="./assets/flames.png" title="tasks left" alt="tasks left" width="50px" height="50px">
+                    <span id="task-left-score">0/0</span>
+                </div>
+                <div id="task-finish">
+                    <img src="./assets/flag.png" title="tasks done" alt="tasks done" width="50px" height="50px">
+                    <span id="task-finish-score">0/0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-content">
+            <div class="userinput">
+                <input type="text" id="input-field" placeholder="add a new task">
+                <button class="add-task">
+                    <img src="./assets/plus.png" alt="add task" width="20px" height="20px">
+                </button>
+            </div>
+
+            <ul class="list-of-tasks">
+            </ul>
+
+            <button class="clear-list">
+                <img src="./assets/clear.png" title="clear all" alt="clear task list" width="30px" height="30px">
+            </button>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
